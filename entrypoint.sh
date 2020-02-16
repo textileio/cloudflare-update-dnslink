@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 set -e # abort on any error
 
 # Curl the Cloudlfare endpoint for the zone Ids of the provided domains
