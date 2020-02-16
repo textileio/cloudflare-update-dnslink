@@ -1,0 +1,12 @@
+# action.yml
+name: 'Cloudflare Update DNSLink'
+description: 'Update a Cloudflare DNSLink with a new IFPS Hash'
+inputs:
+  cid:  # IPFS CID
+    description: 'IPFS CID'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.cid }}
