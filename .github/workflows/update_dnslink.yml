@@ -1,4 +1,4 @@
-name: bucket_push
+name: update_dnslink
 on:
   push:
     branches:
@@ -8,7 +8,7 @@ on:
       - master
 
 jobs:
-  bucket_push:
+  update_dnslink:
     runs-on: ubuntu-latest
     name: Update a DNSLink
     steps:
