@@ -25,6 +25,5 @@ else
       echo "Pages Update: Success"
       echo "  Webpage $RECORD_NAME updated to $1."
       echo "  Update time will vary depending on your Cloudflare settings."
-      echo "  View latest page at https://cloudflare-ipfs.com/ipns/$RECORD_NAME."
   done
 fi
