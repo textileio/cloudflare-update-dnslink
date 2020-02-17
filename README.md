@@ -14,7 +14,7 @@ Allows you to quickly update a Cloudflare DNSLink with a new IPFS CID. This acti
   id: dnslink
   uses: textileio/cloudflare-update-dnslink@master
   with:
-        cid: ${{ steps.push.outputs.cid }}
+    cid: ${{ steps.push.outputs.cid }}
 ```
 
 For a more complete tutorial, see [this blog post](https://blog.textile.io/ethden-using-ci-to-publish-your-webpage-using-ipfs-and-textile-buckets/).
