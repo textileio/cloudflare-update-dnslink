@@ -12,7 +12,8 @@ Allows you to quickly update a Cloudflare DNSLink with a new IPFS CID. This acti
     RECORD_NAME: '_dnslink.subdomainname'
     CLOUDFLARE_TOKEN_ZONE_ID: ${{ secrets.CLOUDFLARE_TOKEN_ZONE_ID }}
   id: dnslink
-  uses: textileio/cloudflare-update-dnslink@master      with:
+  uses: textileio/cloudflare-update-dnslink@master
+  with:
         cid: ${{ steps.push.outputs.cid }}
 ```
 
