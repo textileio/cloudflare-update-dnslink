@@ -10,7 +10,7 @@ Allows you to quickly update a Cloudflare DNSLink with a new IPFS CID. This acti
     CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
     RECORD_DOMAIN: "example.com"
     RECORD_NAME: "_dnslink.app"
-    CLOUDFLARE_TOKEN_ZONE_ID: ${{ secrets.CLOUDFLARE_TOKEN_ZONE_ID }}
+    CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
   id: dnslink
   uses: PabiGamito/cloudflare-update-dnslink@master
   with:
