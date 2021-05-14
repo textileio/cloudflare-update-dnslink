@@ -8,11 +8,13 @@ Allows you to quickly update a Cloudflare DNSLink with a new IPFS CID. This acti
 - name: Update DNSLink
   env:
     CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
-    RECORD_DOMAIN: "example.com"
-    RECORD_NAME: "_dnslink.app"
+    RECORD_DOMAIN: "textile.io"
+    RECORD_NAME: "_dnslink.subdomainname"
     CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
   id: dnslink
-  uses: PabiGamito/cloudflare-update-dnslink@master
+  uses: textileio/cloudflare-update-dnslink@master
   with:
     cid: ${{ steps.push.outputs.cid }}
 ```
+
+For a more complete tutorial, see [this blog post](https://blog.textile.io/ethden-using-ci-to-publish-your-webpage-using-ipfs-and-textile-buckets/).
