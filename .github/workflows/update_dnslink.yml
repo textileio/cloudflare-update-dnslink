@@ -12,13 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Update a DNSLink
     steps:
-    - name: Update DNSLink
-      env:
-        CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
-        CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
-        RECORD_DOMAIN: 'txtl.us'
-        RECORD_NAME: '_dnslink.d'
-      id: dnslink
-      uses: textileio/cloudflare-update-dnslink@master
-      with:
-        cid: 'Qmf65nLokMjpkQjzgs68ik5AuHSu7NVSjSiGtko5ABp6FY'
+      - name: Update DNSLink
+        env:
+          CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
+          CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+          RECORD_DOMAIN: "txtl.us"
+          RECORD_NAME: "_dnslink.d"
+        id: dnslink
+        uses: textileio/cloudflare-update-dnslink@master
+        with:
+          cid: "Qmf65nLokMjpkQjzgs68ik5AuHSu7NVSjSiGtko5ABp6FY"
